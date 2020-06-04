@@ -1,5 +1,6 @@
 package com.jojoldu.book.spring.web.dto;
 
+
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 

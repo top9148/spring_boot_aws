@@ -7,14 +7,14 @@ import javax.persistence.*;
 
 @Getter
 @NoArgsConstructor
-@Entity
+@Entity // JPA 테이블과 링크될 클래스(클래스의 카멜 케이스 언더스코어 네이밍으로 테이블 이름 매칭)
 public class Posts {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id // 해당 테이블의 PK 필드를 나타냄
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // PK 생성 규칙 스프링 2.0에서는 GenerationType.IDENTITY(auto_increment)
     private Long id;
 
-    @Column(length = 500, nullable = false)
+    @Column(length = 500, nullable = false) // 테이블 컬럼 - 기본값 문자열 VARCHAR(255)
     private String title;
 
     @Column(columnDefinition = "TEXT", nullable = false)

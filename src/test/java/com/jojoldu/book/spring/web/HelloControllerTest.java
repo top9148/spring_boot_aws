@@ -27,7 +27,7 @@ public class HelloControllerTest {
     public void hello가_리턴된다() throws Exception {
         String hello = "hello";
 
-        // MockMvc를 통한 HTTP GET 요청, 체이닝 지원을 통홰 여러 검증 기능을 이어서 선언 가능
+        // MockMvc를 통한 HTTP GET 요청, 체이닝 지원을 통홰 여러 검증 기능을 이어서 선언 가능F
         mvc.perform(get("/hello"))
                 .andExpect(status().isOk())             // HTTP Header Status 검증
                 .andExpect(content().string(hello));    // 응답 본문 내용 검증

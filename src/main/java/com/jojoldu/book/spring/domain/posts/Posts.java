@@ -3,8 +3,10 @@ package com.jojoldu.book.spring.domain.posts;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.NonNull;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotEmpty;
 
 @Getter // 클래스 내 모든 필드의 Getter 메소드를 자동 생성
 @NoArgsConstructor  // 기본 생성자 자동 추가
@@ -15,6 +17,7 @@ public class Posts extends BaseTimeEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY) // PK 생성 규칙 스프링 2.0에서는 GenerationType.IDENTITY(auto_increment)
     private Long id;
 
+    @NotEmpty(message = "비정상 데이터")
     @Column(length = 500, nullable = false) // 테이블 컬럼 - 기본값 문자열 VARCHAR(255)
     private String title;
 

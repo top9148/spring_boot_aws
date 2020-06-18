@@ -1,4 +1,7 @@
+
 spring:
+  progiles:
+    inclued: oauth
   jpa:
     show-sql: true
     properties:

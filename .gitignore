@@ -2,4 +2,4 @@
 .gradle
 .idea
 
-application-auth.yml
+application-oauth.yml

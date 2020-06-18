@@ -1,9 +1,9 @@
 package com.jojoldu.book.spring.domain.posts;
 
+import com.jojoldu.book.spring.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.NonNull;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;

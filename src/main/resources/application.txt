@@ -1,6 +1,6 @@
 
 spring:
-  progiles:
+  profiles:
     inclued: oauth
   jpa:
     show-sql: true

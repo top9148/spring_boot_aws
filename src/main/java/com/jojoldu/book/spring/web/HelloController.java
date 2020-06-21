@@ -12,7 +12,7 @@ public class HelloController {
     // HTTP METHOD GET 요청 API 처리(기존 @RequestMappping(method = RequestMethod.GET))
     @GetMapping("/hello")
     public String Hello() {
-        return "Hello";
+        return "hello";
     }
 
     @GetMapping("/hello/dto")

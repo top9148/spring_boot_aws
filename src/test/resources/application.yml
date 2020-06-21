@@ -1,0 +1,19 @@
+spring:
+    h2:
+        console:
+            enabled: true
+    jpa:
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        show_sql: true
+    security:
+        oauth2:
+            client:
+                registration:
+                    google:
+                        client-id: test
+                        client-secret: test
+                        scope: profile,email
+    session:
+        store-type: jdbc
